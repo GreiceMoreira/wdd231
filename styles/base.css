@@ -101,7 +101,7 @@ h1 {
 h2 {
     color: var(--black);
 }
-.my_photo {
+header img {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
