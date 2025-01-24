@@ -115,7 +115,7 @@ section {
     border: 3px outset var(--ligth-green);
     padding: 1rem;
     background-color: var(--ligth-green);
-    color: var(--brown);
+    color: var(--pale);
     border-radius: 6px;
     clear: both;
     text-align: center;
