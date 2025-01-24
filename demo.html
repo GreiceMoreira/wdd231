@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- Last modification 08.05.2024 -->
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>WDD 231 - Dynamic Web Fundamentals - Greice Moreira</title>
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Home">
+    <meta name="author" content="Greice Moreira">
+    
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css">
+
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals - Greice Moreira</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="https://www.linkedin.com/in/greice-franceschetti-de-andrade-moreira-7b2414b1/">Linkedin</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/2-ne/22?lang=eng&id=p2#p2">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <div class="grid">
+        <main>
+            <h2>About me</h2>
+            <img src="images/profile.jpg" alt="Hello, my name is Greice Franceschetti de Andrade Moreira" width="200">
+            <p>Hello! My name is Greice Franceschetti de Andrade Moreira and I am from Rio Grande do Sul, Brazil. <br>
+                I enjoy playing video games and watching Korean dramas. <br>
+                I teach at a kindergarten in Quebec City, Canada. <br>
+                I started studying web development in 2020; however,
+                I have never had the chance to work with it. <br>
+                I hope that obtaining a degree will change that.
+            </p>
+        </main>
+        <aside class="box">
+            <img src="images/rio-grando-sul-flag.jpg" alt="Traditional mate and flag">
+            <h2>Rio Grande do Sul</h2>
+            <p>Rio Grande do Sul ("Great River of the South") is a state in the southern region of Brazil. It is the
+                fifth-most populous state and the ninth-largest by area. <br>
+                The state shares a gaucho culture with its neighbors Argentina and Uruguay. Large waves of German and
+                Italian migration have shaped the state as well.
+            </p>
+        </aside>
+        <ul aria-label="References:" class="box indent">
+            <li><a href="" target="_blank">Reference</a></li>
+            <li><a href="" target="_blank">Reference</a></li>
+            <li><a href="" target="_blank">Reference</a></li>
+        </ul>
+    </div>
+    <footer>
+        <p id="year" onload="thisYear()"> | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil</p>
+        <p id="lastModification"> placeholder</p>
+    </footer>
+</body>
+
+</html>

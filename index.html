@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<!-- Last modification 08.05.2024 -->
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>WDD 231 - Dynamic Web Fundamentals - Greice Moreira</title>
+    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Home">
+    <meta name="author" content="Greice Moreira">
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/media-query-small.css">
+
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <img src="images/my_photo.jpeg" alt="My personal photo" class="my_photo">
+        <h1>Greice Moreira</h1>
+    </header>
+    <nav>
+        <div class = "menu-icon" onclick="toggleMenu()">☰</div>
+        <div class = "menu">
+            <a href="#">Home</a>
+            <a href="#">Chamber of Commerce</a>
+            <a href="https://github.com/GreiceMoreira">GitHub Profile</a>
+            <a href="https://www.linkedin.com/in/greice-franceschetti-de-andrade-moreira-7b2414b1/">Linkedin</a>
+        </div>
+    </nav>
+    <div class="grid">
+
+        <section class="course_work">
+            <h2>Course Work</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus labore placeat dignissimos sequi nostrum, totam, quisquam asperiores aspernatur rem dolore repudiandae alias magni, esse qui veritatis nulla architecto eos. Qui.</p>
+        </section>
+
+        <section class="box">
+            
+            <h2>Rio Grande do Sul</h2>
+            <p><img src="images/rio-grando-sul-flag.jpg" alt="Traditional mate and flag"></p>
+        </section>
+        
+        <section class="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <p class="modules-list">
+                <button type="button" class="course-type">All</button>
+                <button type="button" class="course-type">CSE</button>
+                <button type="button" class="course-type">WDD</button>
+            </p>
+            <p class="modules-list">
+                <button type="button" class="course-module">CSE 110</button>
+                <button type="button" class="course-module">WDD 130</button>
+                <button type="button" class="course-module">CSE 111</button>
+                <button type="button" class="course-module">CSE 210</button>
+                <button type="button" class="course-module">WDD 131</button>
+                <button type="button" class="course-module">WDD 231</button>
+            </p>
+        </section>
+    </div>
+    <footer>
+        <p id="currentyear" onload="thisYear()"></p>
+        <p id="lastModification"> placeholder</p>
+    </footer>
+</body>
+
+</html>
