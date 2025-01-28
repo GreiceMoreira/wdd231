@@ -1,0 +1,23 @@
+{
+    "familyName" : "Andrade",
+    "movedDate" : "12/12/2012",
+    "numberOfRecords" : 3,
+    "isVisited" : true,
+    "familyMembers" : [
+      {
+        "name" : "Wife",
+        "gender" : "F",
+        "bithdate" : "12/12/2012"
+      },
+      {
+        "name" : "Boy",
+        "gender" : "M",
+        "bithdate" : "12/12/2012"
+      },
+      {
+        "name" : "Girl",
+        "gender" : "F",
+        "bithdate" : "12/12/2012"
+      }
+    ]
+  }
