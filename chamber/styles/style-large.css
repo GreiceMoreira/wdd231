@@ -1,5 +1,9 @@
 @media only screen and (min-width: 40em) {
 
+	.hero-image {
+		background-image: url(../images/porto-alegre-hero.webp);
+	}
+
     .navigation {
 		display: flex;
 	}
