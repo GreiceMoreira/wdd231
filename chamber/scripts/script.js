@@ -14,23 +14,17 @@ function toggleMenu() {
     menu.classList.toggle('show');
 }
 
-async function getData(){
-    const company = await fetch()
-
-}
-
 const url = "https://raw.githubusercontent.com/GreiceMoreira/wdd231/main/chamber/data/members.json";
-
 const cards = document.querySelector('#cards');
 
-async function getCompanyData(){
+async function getCompanyData() {
     const response = await fetch(url);
     const data = await response.json();
 
-    displayCompany(data.companyName);
+    displayCompanies(data.companies);
 }
 
-function displayCompany (companies) {
+function displayCompanies(companies) {
     companies.forEach(company => {
         let card = document.createElement('section');
         card.classList.toggle('own');
@@ -45,11 +39,11 @@ function displayCompany (companies) {
         addresse.textContent = `${company.addresse}`;
 
 
-        image.setAttribute('src' , company.imageurl);
-        image.setAttribute('alt' , `image of ${companyNames.companyName} company`);
-        image.setAttribute('loading' , 'lazy');
-        image.setAttribute('width' , '340');
-        image.setAttribute( 'heigth' , '440');
+        image.setAttribute('src', company.imageurl);
+        image.setAttribute('alt', `image of ${companyNames.companyName} company`);
+        image.setAttribute('loading', 'lazy');
+        image.setAttribute('width', '340');
+        image.setAttribute('height', '440');
 
         card.appendChild(companyNames)
         card.appendChild(website)
