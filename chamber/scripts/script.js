@@ -83,6 +83,19 @@ function displayCompanies(companies) {
     });
 }
 
+// grid or list 
+
+function setView(view) {
+    const container = document.getElementById('membersContainer');
+    if (view === 'grid') {
+        container.classList.remove('list');
+        container.classList.add('grid');
+    } else {
+        container.classList.remove('grid');
+        container.classList.add('list');
+    }
+}
+
 
 function onLoad() {
     thisYear()
