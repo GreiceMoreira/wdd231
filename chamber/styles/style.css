@@ -92,9 +92,9 @@ section {
 }
 .logo {
     width: auto;
+    height: 50px;
     box-shadow: 0 0 30px var(--green);
     border: none;
-    height: 50px;
     margin-right: 10px;
 
 }
