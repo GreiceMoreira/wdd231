@@ -5,7 +5,7 @@
             "addresse": "Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006",
             "phoneNumber": "55 4004-1112",
             "website": "zaffari.com.br",
-            "imageurl": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
+            "imageurl": "https://github.com/GreiceMoreira/wdd231/blob/main/chamber/images/zaffari.png",
             "membershipLevel": 1
         },
         {
@@ -13,7 +13,7 @@
             "addresse": "R. Dr. Francisco de Sá Brito, 56 - Partenon, Porto Alegre - RS, 91530-470",
             "phoneNumber": "51 99229-2374",
             "website": "stihl.com.br/pt",
-            "image": "https://uplZoad.wikimedia.org/wikipedia/commons/thumb/7/7f/Stihl_Logo.svg/2560px-Stihl_Logo.svg.png",
+            "image": "https://github.com/GreiceMoreira/wdd231/blob/main/chamber/images/stihl.png",
             "membershipLevel": 1
         },
         {
@@ -21,7 +21,7 @@
             "addresse": "Av. Assis Brasil, 5577 - Sarandi, Porto Alegre - RS, 91110-001, Brésil",
             "phoneNumber": "55 4004-2444",
             "website": "tumelero.com.br/",
-            "image": "https://sunbb.com.br/wp-content/uploads/2022/08/tumerelo.png",
+            "image": "https://github.com/GreiceMoreira/wdd231/blob/main/chamber/images/tumelero.png",
             "membershipLevel": 3
         },
         {
@@ -45,7 +45,7 @@
             "addresse": "Av. Sertório, 6767 - Sarandi, Porto Alegre - RS, 91110-581",
             "phoneNumber": "55 4020-5376",
             "website": "https://www.leroymerlin.com.br/",
-            "image": "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASEA…B4nU8cwZ9+Xjn8uX7CUT/BxQbyHe9cQirAAAAAElFTkSuQmCC",
+            "image": "https://github.com/GreiceMoreira/wdd231/blob/main/chamber/images/leroy-merlin.png",
             "membershipLevel": 2
         },
         {
@@ -53,7 +53,7 @@
             "addresse": "Av. Diário de Notícias, 300 - Cristal, Porto Alegre - RS, 90810-080",
             "phoneNumber": "51 40034171",
             "website": "barrashoppingsul.com.br",
-            "image": "https://assets.multiplan.com.br/Multiplan/filer_pu…4-490f-a3d2-b42f0bcfbc7a/logo_trevo.jpg?ims=1000x",
+            "image": "https://github.com/GreiceMoreira/wdd231/blob/main/chamber/images/barra.png",
             "membershipLevel": 1
         }
     ]
