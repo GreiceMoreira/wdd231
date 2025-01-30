@@ -1,10 +1,10 @@
-[
+{"companys": [
     {
         "companyName": "Zaffari",
         "addresse": "Bourbon Shopping Wallig, Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006, Brésil",
         "phoneNumber": "5540041112",
         "website": "https://www.zaffari.com.br/",
-        "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
+        "imageurl": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
         "membershipLevel": 1
     },
     {
@@ -55,4 +55,4 @@
         "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
         "membershipLevel": 1
     }
-]
+]}

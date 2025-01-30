@@ -14,54 +14,55 @@ function toggleMenu() {
     menu.classList.toggle('show');
 }
 
-function onLoad() {
-    thisYear()
-    myFunction()
-}
-
 async function getData(){
     const company = await fetch()
 
 }
 
-const url = "https://brotherblazzard.github.io/canvas-content/latter-day-prophets.json";
+const url = "https://raw.githubusercontent.com/GreiceMoreira/wdd231/main/chamber/data/members.json";
+
 const cards = document.querySelector('#cards');
 
-async function getProphetData(){
+async function getCompanyData(){
     const response = await fetch(url);
     const data = await response.json();
-    // console.table(data.prophets);
-    displayProphets(data.prophets);
+
+    displayCompany(data.companyName);
 }
 
-const displayProphets = (prophets) => {
-    prophets.forEach(prophet => {
+const displayCompany = (companys) => {
+    companys.forEach(company => {
         let card = document.createElement('section');
         card.classList.toggle('own');
-        let fullName = document.createElement('h2');
-        let birthDate = document.createElement('h3');
-        let birthPlace = document.createElement('h4');
-        let portrait = document.createElement('img');
+        let companyNames = document.createElement('h2');
+        let website = document.createElement('h3');
+        let addresse = document.createElement('h4');
+        let image = document.createElement('img');
 
-        fullName.textContent = `${prophet.name} prophet`;
+        companyNames.textContent = `${company.companyName} Company`;
 
-        birthDate.textContent = `${prophet.birthdate}`;
-        birthPlace.textContent = `${prophet.birthplace}`;
+        website.textContent = `${company.website}`;
+        addresse.textContent = `${company.addresse}`;
 
 
-        portrait.setAttribute('src' , prophet.imageurl);
-        portrait.setAttribute('alt' , 'Portrait of ${prophet.name} prophet');
-        portrait.setAttribute('loading' , 'lazy');
-        portrait.setAttribute('width' , '340');
-        portrait.setAttribute( 'heigth' , '440');
+        image.setAttribute('src' , company.imageurl);
+        image.setAttribute('alt' , `image of ${companyNames.companyName} company`);
+        image.setAttribute('loading' , 'lazy');
+        image.setAttribute('width' , '340');
+        image.setAttribute( 'heigth' , '440');
 
-        card.appendChild(fullName)
-        card.appendChild(birthDate)
-        card.appendChild(birthPlace)
-        card.appendChild(portrait)
+        card.appendChild(companyNames)
+        card.appendChild(website)
+        card.appendChild(addresse)
+        card.appendChild(image)
 
         cards.appendChild(card)
     });
 }
 
-getProphetData();
+
+function onLoad() {
+    thisYear()
+    myFunction()
+    getCompanyData();
+}
