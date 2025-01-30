@@ -1,5 +1,9 @@
 @media only screen and (min-width: 40em) {
-	.navigation {
+	nav {
+        grid-column: 1/4;
+        align-content: center;
+    }
+    .navigation {
 		display: flex;
 	}
 	.navigation li {

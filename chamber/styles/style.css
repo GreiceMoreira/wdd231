@@ -1,12 +1,12 @@
 :root {
-    --background :  #fefefe;
-    --pale : #e9e0d1;
-    --ligth-green : #91a398;
-    --green : #33605A;
+    --background: #fefefe;
+    --pale: #e9e0d1;
+    --ligth-green: #91a398;
+    --green: #33605A;
     --black: #070001;
-    --brown : #68462b;
+    --brown: #68462b;
     --dark-green: #005151;
-    --red : #F9423A;
+    --red: #F9423A;
     --yellow: #FFB81C;
     --white: #FBF9EE;
     --dark: #000000;
@@ -34,9 +34,11 @@ footer {
     margin: 1rem;
     position: relative;
 }
-head {
-    display: flex;
-    justify-content: space-between;
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 0.7fr;
 }
 
 h1 {
@@ -59,6 +61,7 @@ h1 {
     width: 100%;
     height: 50vh;
 }
+
 h2 {
     color: var(--dark-green);
     margin: 0 0 1rem 0;
@@ -84,12 +87,16 @@ section {
     align-items: center;
 }
 
-
+.logo-name{
+    display: flex;
+    align-items: center;
+}
 .logo {
     width: auto;
     box-shadow: 0 0 30px var(--green);
     border: none;
     height: 50px;
+    margin-right: 10px;
 
 }
 
@@ -116,20 +123,18 @@ footer {
     font-weight: bold;
     border-radius: 5px;
     border: none;
-
-
 }
 
 
 /* Menu Mobile View */
 #menu {
-	display: block;
-	font-size: 2rem;
-	font-weight:700;
-	text-decoration: none;
-	padding: .5rem .75rem;
-	background-color: var(--white);
-	color: var(--dark-green);
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    background-color: var(--white);
+    color: var(--dark-green);
     position: absolute;
     right: 2.5rem;
     top: 1rem;
@@ -137,7 +142,7 @@ footer {
 }
 
 #menu::before {
-	content: "≡";
+    content: "≡";
 }
 
 #menu.open::before {
@@ -145,52 +150,55 @@ footer {
 }
 
 nav {
-	background-color: var(--dark-green);
+    background-color: var(--dark-green);
 }
+
 .navigation {
-	list-style: none;
-	margin: 0 auto;
-	max-width: 760px;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
 }
 
 .navigation li {
-	display: none;
-}
-.navigation a {
-	display: block;
-	padding: 0.75rem;
-	text-align: left;
-	text-decoration: none;
-	color: var(--white);
-	font-weight: 700;
-	transition: 0.5s;
-	font-size: clamp(1rem, 2vmin, 1.5rem);
+    display: none;
 }
 
-.navigation a:hover, navigation a:active {
-	color: var(--red);
-	background-color: var(--white);
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--white);
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover,
+navigation a:active {
+    color: var(--red);
+    background-color: var(--white);
 }
 
 .show li {
-	display: block;
+    display: block;
 }
 
 #menu.show::before {
-	content: "X";
+    content: "X";
 }
 
 /* grid and list  */
 
 .visualCards {
     margin: 1rem auto;
-	background-color: var(--white);
-	text-align: center;
+    background-color: var(--white);
+    text-align: center;
 }
 
 .visualCards button {
-	padding: 1rem;
-	font-weight: 700;
+    padding: 1rem;
+    font-weight: 700;
 }
 
 
@@ -203,6 +211,7 @@ nav {
     gap: 5px;
     align-items: center;
 }
+
 h3 {
     margin: 0;
 }
