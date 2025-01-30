@@ -27,25 +27,32 @@
     <script src="scripts/script.js" defer></script>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
 </head>
 
 <body onload="onLoad()">
     <header>
-        <h1>Porto Alegre</h1>
-        <img class="logo" src="images/32.png" alt="logo">
-        <button class="cta">CTA</button>
+        <div>       
+            <img class="logo" src="images/32.png" alt="logo">
+        <h3>Porto Alegre <br>
+            Chamber of Comerce</h3></div>
 
         <button id="menu"></button>
+        <button class="cta">Join us</button>
         <nav>
-            <div class="navigation"></div>
+            <ul class="navigation">
             <li><a href="#">Home</a></li>
             <li><a href="#">Directory</a></li>
             <li><a href="#">Join</a></li>
             <li><a href="#">Discover</a></li>
-            </div>
+            </ul>
         </nav>
+
     </header>
     <main>
+        <div class="hero-image">
+            <h1>Welcome to Porto Alegre</h1>
+        </div>
         <h2 id="subTitle" onload="setSubTitle()">HOME</h2>
         <div>
             <section class="todays">
@@ -54,20 +61,33 @@
                 <div>Wather Forecast</div>
             </section>
         </div>
-        
+
+
+        <div class="visualCards">
+            <button>🔲 </button>
+            <button>📋</button>
+        </div>
+
         <section></section>
 
         <article class="grid" id="cards"></article>
 
     </main>
     <footer>
-        <p>Personal informations</p>
-        <a href="#">Youtube</a>
-        <a href="#">Twitter</a>
-        <a href="#">Linkdin</a>
-        <p>WDD231 Class Project</p>
-        <p id="currentyear" onload="thisYear()"></p>
-        <p id="lastModification"> placeholder</p>
+        <div>
+            <p>Personal informations</p>
+        </div>
+        <div>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkdin</a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p id="currentyear" onload="thisYear()"></p>
+            <p id="lastModification"> placeholder</p>
+        </div>
+
     </footer>
 </body>
 
