@@ -2,7 +2,7 @@
     "companies": [
         {
             "companyName": "Zaffari",
-            "addresse": "Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006",
+            "addresse": "Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre",
             "phoneNumber": "55 4004-1112",
             "website": "zaffari.com.br",
             "imageurl": "https://zffqasa1apista001.blob.core.windows.net/wordpress-img/assets-ecommerce/logo-desktop.svg",
@@ -10,31 +10,31 @@
         },
         {
             "companyName": "STIHL",
-            "addresse": "R. Dr. Francisco de Sá Brito, 56 - Partenon, Porto Alegre - RS, 91530-470",
+            "addresse": "R. Dr. Francisco de Sá Brito, 56 - Partenon, Porto Alegre",
             "phoneNumber": "51 99229-2374",
             "website": "stihl.com.br/pt",
-            "imageurl": "https://fr.wikipedia.org/wiki/Stihl#/media/Fichier:Stihl_Logo.svg",
+            "imageurl": "images/stihl.png",
             "membershipLevel": 1
         },
         {
             "companyName": "Tumelero Building Materials",
-            "addresse": "Av. Assis Brasil, 5577 - Sarandi, Porto Alegre - RS, 91110-001, Brésil",
+            "addresse": "Av. Assis Brasil, 5577 - Sarandi, Porto Alegre",
             "phoneNumber": "55 4004-2444",
             "website": "tumelero.com.br/",
-            "imageurl": "https://raw.github.com/GreiceMoreira/wdd231/blob/main/chamber/images/tumelero.png",
+            "imageurl": "images/tumelero.png",
             "membershipLevel": 3
         },
         {
-            "companyName": "Cristiani Borges Advogados",
-            "addresse": "Di gallery Primio Beck - Largo dos Medeiros, R. dos Andradas, 1137 - Sala 911 - Centro Histórico, Porto Alegre - RS, 90020-015",
-            "phoneNumber": "51 3085-0767",
-            "website": "cristianiborges.com.br",
-            "imageurl": "https://cristianiborges.com.br/wp-content/uploads/2024/10/logo-branca-300px.png",
+            "companyName": "PUCRS",
+            "addresse": "Av. Ipiranga, 6681 - Partenon, Porto Alegre",
+            "phoneNumber": "51 3320-3500",
+            "website": "portal.pucrs.br/",
+            "imageurl": "images/PUCRS.png",
             "membershipLevel": 2
         },
         {
             "companyName": "Cassol Centerlar",
-            "addresse": "Av. Sen. Tarso Dutra, 665 - Petrópolis, Porto Alegre - RS, 90690-140",
+            "addresse": "Av. Sen. Tarso Dutra, 665 - Petrópolis, Porto Alegre",
             "phoneNumber": "55 4001-1515",
             "website": "cassol.com.br",
             "imageurl": "images/cassol.png",
@@ -42,7 +42,7 @@
         },
         {
             "companyName": "Leroy Merlin Porto Alegre",
-            "addresse": "Av. Sertório, 6767 - Sarandi, Porto Alegre - RS, 91110-581",
+            "addresse": "Av. Sertório, 6767 - Sarandi, Porto Alegre",
             "phoneNumber": "55 4020-5376",
             "website": "https://www.leroymerlin.com.br/",
             "imageurl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Leroy_Merlin.svg",
@@ -50,10 +50,10 @@
         },
         {
             "companyName": "Barra Shopping Sul",
-            "addresse": "Av. Diário de Notícias, 300 - Cristal, Porto Alegre - RS, 90810-080",
+            "addresse": "Av. Diário de Notícias, 300 - Cristal, Porto Alegre",
             "phoneNumber": "51 40034171",
             "website": "barrashoppingsul.com.br",
-            "imageurl": "https://raw.github.com/GreiceMoreira/wdd231/blob/main/chamber/images/barra.png",
+            "imageurl": "images/barra.png",
             "membershipLevel": 1
         }
     ]

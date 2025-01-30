@@ -36,9 +36,7 @@ footer {
 }
 
 header {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 0.7fr;
+display: block;
 }
 
 h1 {
@@ -90,6 +88,7 @@ section {
 .logo-name{
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 .logo {
     width: auto;
@@ -102,6 +101,7 @@ section {
 
 footer {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     background-color: var(--background);
     padding: 1em;
@@ -175,7 +175,7 @@ nav {
 }
 
 .navigation a:hover,
-navigation a:active {
+.navigation a:active {
     color: var(--red);
     background-color: var(--white);
 }

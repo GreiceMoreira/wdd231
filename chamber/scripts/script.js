@@ -43,7 +43,7 @@ function activePage() {
 }
 
 // Companies Cards 
-const url = "https://raw.githubusercontent.com/GreiceMoreira/wdd231/main/chamber/data/members.json";
+const url = "data/members.json";
 const cards = document.querySelector('#cards');
 
 async function getCompanyData() {
@@ -58,11 +58,12 @@ function displayCompanies(companies) {
         let card = document.createElement('section');
         card.classList.toggle('own');
         let companyNames = document.createElement('h2');
+        let image = document.createElement('img');
         let website = document.createElement('h3');
         let addresse = document.createElement('h4');
-        let image = document.createElement('img');
+        
 
-        companyNames.textContent = `${company.companyName} Company`;
+        companyNames.textContent = `${company.companyName}`;
 
         website.textContent = `${company.website}`;
         addresse.textContent = `${company.addresse}`;
@@ -75,9 +76,10 @@ function displayCompanies(companies) {
         image.setAttribute('height', '440');
 
         card.appendChild(companyNames)
+        card.appendChild(image)
         card.appendChild(website)
         card.appendChild(addresse)
-        card.appendChild(image)
+        
 
         cards.appendChild(card)
     });
