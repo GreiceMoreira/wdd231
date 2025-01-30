@@ -1,3 +1,4 @@
+// Last modification and current Year 
 const lastModification = document.getElementById("lastModification");
 const d = new Date();
 
@@ -9,11 +10,44 @@ function myFunction() {
     lastModification.innerHTML = "Last modification: " + document.lastModified
 }
 
+// Hamburguer menu 
+
+const mainnav = document.querySelector('.navigation')
+const hambutton = document.querySelector('#menu');
+
+hambutton.addEventListener('click', () => {
+	mainnav.classList.toggle('show');
+	hambutton.classList.toggle('show');
+});
+
+
 function toggleMenu() {
     const menu = document.querySelector('.menu');
     menu.classList.toggle('show');
 }
 
+//subtitle
+
+
+function setSubTitle() {
+    let subTitle = document.querySelector(".active-page");
+    console.log(subTitle.outerText)
+
+    document.querySelector("#subTitle").innerHTML = subTitle.outerText
+
+}
+
+function activePage() {
+    const links = document.querySelectorAll("nav li a");
+    
+    links.forEach(link => {
+        if (link.href === location.href) {
+            link.classList.toggle("active-page");
+        }
+    });
+}
+
+// Companies Cards 
 const url = "https://raw.githubusercontent.com/GreiceMoreira/wdd231/main/chamber/data/members.json";
 const cards = document.querySelector('#cards');
 
@@ -59,4 +93,6 @@ function onLoad() {
     thisYear()
     myFunction()
     getCompanyData();
+    activePage()
+    setSubTitle()
 }

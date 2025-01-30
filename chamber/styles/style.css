@@ -8,3 +8,169 @@
 
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Flex", Arial, sans-serif;
+    ;
+}
+
+
+body {
+    background-color: var(--ligth-green);
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+header,
+main,
+footer {
+    margin: 1rem;
+    position: relative;
+}
+
+header {
+    background-color: var(--pale);
+} 
+
+
+h1 {
+    color: var(--black);
+    border-bottom: 1px solid #eee;
+    text-shadow: 0 0 15px var(--ligth-green);
+    width: 60%;
+}
+
+h2 {
+    color: var(--green);
+    margin: 0 0 1rem 0;
+    border-bottom: 1px solid var(--ligth-green);
+}
+
+p {
+    margin: 0;
+}
+
+main {
+    margin-left: 2rem;
+}
+
+section {
+    margin: 0.25rem;
+    padding: 0.35rem;
+    background-color: var(--brown);
+    border: 1px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.logo {
+    width: auto;
+    box-shadow: 0 0 30px var(--green);
+    border: none;
+    height: 50px;
+
+}
+
+footer {
+    background-color: var(--background);
+    padding: 1em;
+    margin-top: 15px;
+    border-top: 1px solid var(--black);
+    text-align: center;
+
+}
+
+/* Menu Mobile View */
+#menu {
+	display: block;
+	font-size: 2rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: var(--pale);
+	color: var(--green);
+    position: absolute;
+    right: 2.5rem;
+    top: 1rem;
+    border: none;
+}
+
+#menu::before {
+	content: "≡";
+}
+
+#menu.open::before {
+    content: "\00d7";
+}
+
+nav {
+	background-color: var(--green);
+}
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	max-width: 760px;
+}
+
+.navigation li {
+	display: none;
+}
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	color: var(--pale);
+	font-weight: 700;
+	transition: 0.5s;
+	font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover, navigation a:active {
+	color: white;
+	background-color: var(--black);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+
+/* Cards */
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 5px;
+    align-items: center;
+}
+
+h3 {
+    margin: 0;
+}
+
+h4 {
+    color: var(--brown);
+    margin: 7px 0 5px 0;
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #777;
+    height: 200px;
+    border: 1px solid #333;
+}
+
+.own {
+    background-color: var(--pale);
+}
