@@ -72,8 +72,6 @@ function displayCompanies(companies) {
         image.setAttribute('src', company.imageurl);
         image.setAttribute('alt', `image of ${companyNames.companyName} company`);
         image.setAttribute('loading', 'lazy');
-        image.setAttribute('width', '340');
-        image.setAttribute('height', '440');
 
         card.appendChild(companyNames)
         card.appendChild(image)
