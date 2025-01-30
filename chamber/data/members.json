@@ -4,7 +4,7 @@
             "companyName": "Zaffari",
             "addresse": "Bourbon Shopping Wallig, Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006",
             "phoneNumber": "55 4004-1112",
-            "website": "https://www.zaffari.com.br/",
+            "website": "zaffari.com.br",
             "imageurl": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
             "membershipLevel": 1
         },
@@ -12,33 +12,25 @@
             "companyName": "STIHL",
             "addresse": "R. Dr. Francisco de Sá Brito, 56 - Partenon, Porto Alegre - RS, 91530-470",
             "phoneNumber": "51 99229-2374",
-            "website": "https://www.stihl.com.br/pt/concessionarios",
-            "image": "https://www.stihl.com.br/content/experience-fragme…nav/logo.coreimg.svg/1714397271883/stihl-logo.svg",
+            "website": "stihl.com.br/pt",
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Stihl_Logo.svg/2560px-Stihl_Logo.svg.png",
             "membershipLevel": 1
         },
         {
-            "companyName": "Zaffari",
-            "addresse": "Bourbon Shopping Wallig, Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006",
-            "phoneNumber": "5540041112",
-            "website": "https://www.zaffari.com.br/",
-            "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
-            "membershipLevel": 1
+            "companyName": "Tumelero Building Materials",
+            "addresse": "Av. Assis Brasil, 5577 - Sarandi, Porto Alegre - RS, 91110-001, Brésil",
+            "phoneNumber": "55 4004-2444",
+            "website": "tumelero.com.br/",
+            "image": "https://sunbb.com.br/wp-content/uploads/2022/08/tumerelo.png",
+            "membershipLevel": 3
         },
         {
-            "companyName": "Zaffari",
-            "addresse": "Bourbon Shopping Wallig, Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006, Brésil",
-            "phoneNumber": "5540041112",
-            "website": "https://www.zaffari.com.br/",
-            "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
-            "membershipLevel": 1
-        },
-        {
-            "companyName": "Zaffari",
-            "addresse": "Bourbon Shopping Wallig, Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006, Brésil",
-            "phoneNumber": "5540041112",
-            "website": "https://www.zaffari.com.br/",
-            "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
-            "membershipLevel": 1
+            "companyName": "Cristiani Borges Advogados",
+            "addresse": "Di gallery Primio Beck - Largo dos Medeiros, R. dos Andradas, 1137 - Sala 911 - Centro Histórico, Porto Alegre - RS, 90020-015",
+            "phoneNumber": "51 3085-0767",
+            "website": "cristianiborges.com.br",
+            "image": "https://cristianiborges.com.br/wp-content/uploads/2024/10/logo-branca-300px.png",
+            "membershipLevel": 2
         },
         {
             "companyName": "Zaffari",
@@ -46,7 +38,15 @@
             "phoneNumber": "5540041112",
             "website": "https://www.zaffari.com.br/",
             "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
-            "membershipLevel": 1
+            "membershipLevel": 3
+        },
+        {
+            "companyName": "Zaffari",
+            "addresse": "Bourbon Shopping Wallig, Av. Assis Brasil, 2611 - Cristo Redentor, Porto Alegre - RS, 91010-006, Brésil",
+            "phoneNumber": "5540041112",
+            "website": "https://www.zaffari.com.br/",
+            "image": "https://www.biotageom.com.br/upload/service/gqyfNz6PKMBtneqUWEVSWIHqGKf59vqvwrcA8B8I.jpg",
+            "membershipLevel": 2
         },
         {
             "companyName": "Zaffari",
