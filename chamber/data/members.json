@@ -13,7 +13,7 @@
             "addresse": "R. Dr. Francisco de Sá Brito, 56 - Partenon, Porto Alegre - RS, 91530-470",
             "phoneNumber": "51 99229-2374",
             "website": "stihl.com.br/pt",
-            "image": "https://fr.wikipedia.org/wiki/Stihl#/media/Fichier:Stihl_Logo.svg",
+            "imageurl": "https://fr.wikipedia.org/wiki/Stihl#/media/Fichier:Stihl_Logo.svg",
             "membershipLevel": 1
         },
         {
@@ -21,7 +21,7 @@
             "addresse": "Av. Assis Brasil, 5577 - Sarandi, Porto Alegre - RS, 91110-001, Brésil",
             "phoneNumber": "55 4004-2444",
             "website": "tumelero.com.br/",
-            "image": "https://raw.github.com/GreiceMoreira/wdd231/blob/main/chamber/images/tumelero.png",
+            "imageurl": "https://raw.github.com/GreiceMoreira/wdd231/blob/main/chamber/images/tumelero.png",
             "membershipLevel": 3
         },
         {
@@ -29,7 +29,7 @@
             "addresse": "Di gallery Primio Beck - Largo dos Medeiros, R. dos Andradas, 1137 - Sala 911 - Centro Histórico, Porto Alegre - RS, 90020-015",
             "phoneNumber": "51 3085-0767",
             "website": "cristianiborges.com.br",
-            "image": "https://cristianiborges.com.br/wp-content/uploads/2024/10/logo-branca-300px.png",
+            "imageurl": "https://cristianiborges.com.br/wp-content/uploads/2024/10/logo-branca-300px.png",
             "membershipLevel": 2
         },
         {
@@ -37,7 +37,7 @@
             "addresse": "Av. Sen. Tarso Dutra, 665 - Petrópolis, Porto Alegre - RS, 90690-140",
             "phoneNumber": "55 4001-1515",
             "website": "cassol.com.br",
-            "image": "https://raw.cassol.vtexassets.com/assets/vtex.file-man…baa8f2bb2___f6334bb1c92ff33620a9fd538108a5c1.webp",
+            "imageurl": "images/cassol.png",
             "membershipLevel": 3
         },
         {
@@ -45,7 +45,7 @@
             "addresse": "Av. Sertório, 6767 - Sarandi, Porto Alegre - RS, 91110-581",
             "phoneNumber": "55 4020-5376",
             "website": "https://www.leroymerlin.com.br/",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Leroy_Merlin.svg",
+            "imageurl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Leroy_Merlin.svg",
             "membershipLevel": 2
         },
         {
@@ -53,7 +53,7 @@
             "addresse": "Av. Diário de Notícias, 300 - Cristal, Porto Alegre - RS, 90810-080",
             "phoneNumber": "51 40034171",
             "website": "barrashoppingsul.com.br",
-            "image": "https://raw.github.com/GreiceMoreira/wdd231/blob/main/chamber/images/barra.png",
+            "imageurl": "https://raw.github.com/GreiceMoreira/wdd231/blob/main/chamber/images/barra.png",
             "membershipLevel": 1
         }
     ]
