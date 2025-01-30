@@ -30,8 +30,8 @@ async function getCompanyData(){
     displayCompany(data.companyName);
 }
 
-const displayCompany = (companys) => {
-    companys.forEach(company => {
+function displayCompany (companies) {
+    companies.forEach(company => {
         let card = document.createElement('section');
         card.classList.toggle('own');
         let companyNames = document.createElement('h2');
