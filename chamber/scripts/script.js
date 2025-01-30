@@ -33,7 +33,7 @@ function setSubTitle() {
 }
 
 function activePage() {
-    const links = document.querySelectorAll("nav li a");
+    const links = document.querySelectorAll("nav ul li a");
     
     links.forEach(link => {
         if (link.href === location.href) {
