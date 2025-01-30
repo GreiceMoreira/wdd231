@@ -209,7 +209,7 @@ nav {
 .grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 5px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -225,7 +225,7 @@ h4 {
 img {
     max-width: 325px;
     box-shadow: 0 0 30px #777;
-
+    height: auto;
     border: 1px solid #333;
 }
 
