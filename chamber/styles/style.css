@@ -191,13 +191,13 @@ nav {
 
 /* grid and list  */
 
-.visualCards {
+#viewCards {
     margin: 1rem auto;
     background-color: var(--white);
     text-align: center;
 }
 
-.visualCards button {
+.viewCards button {
     padding: 1rem;
     font-weight: 700;
 }
@@ -231,4 +231,19 @@ img {
 
 .own {
     background-color: var(--white);
+}
+
+/* list  */
+
+.list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.ownList {
+    display: flex;
+    flex-direction: initial;
+    align-items: center;
+    justify-content: space-between;
 }

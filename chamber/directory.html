@@ -38,9 +38,9 @@
         <nav>
             <ul class="navigation">
                 <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html">Home</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Discover</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Directory</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Join</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Discover</a></li>
             </ul>
         </nav>
 
@@ -58,15 +58,12 @@
         </div>
 
 
-        <div class="visualCards">
-            <button aria-label="Grid of companies">🔲 </button>
-            <button aria-label="List of companies">📋</button>
+        <div id="viewCards">
+            <button onclick = "setView('grid')" aria-label="Grid of companies">🔲 Grid </button>
+            <button onclick = "setView('list')" aria-label="List of companies">📋 List</button>
         </div>
 
-        <div></div>
-
-        <article class="grid" id="cards">
-        </article>
+        <article class="grid" id="cards"></article>
 
     </main>
     <footer>
