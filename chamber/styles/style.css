@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
     --background: #fefefe;
@@ -101,6 +100,13 @@ section {
 
 }
 
+figcaption {
+    color: var(--dark-green);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 8px;
+}
+
 footer {
     display: flex;
     flex-wrap: wrap;
@@ -120,7 +126,7 @@ footer {
  }
 
 .todays div {
-    grid-column: 1fr;
+    grid-column: 1;
 }
 
 /* CTA  */
@@ -260,7 +266,7 @@ img {
     box-shadow: 0 0 30px var(--green);
     border: 0px;
     border-radius: 8px;
-    background: var(--dark-green);
+    background: var(--ligth-green);
     margin: 5px;
 }
 .own {
