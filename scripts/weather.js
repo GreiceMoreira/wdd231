@@ -1,3 +1,12 @@
+/* <main>
+  <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
+  <figure>
+    <img id="weather-icon" src="" alt="">
+    <figcaption></figcaption>
+  </figure>
+</main> */
+
+
 const currentTemp = document.querySelector("#current-temp");
 const watherIcon = document.querySelector("#weather-icon");
 const captionDesc = document.querySelector('figcaption');

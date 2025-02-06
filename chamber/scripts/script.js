@@ -1,12 +1,11 @@
 // Last modification and current Year 
-const lastModification = document.getElementById("lastModification");
-const d = new Date();
 
 function thisYear() {
+    const d = new Date();
     document.getElementById("currentyear").textContentL = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
 }
-
-function myFunction() {
+function lastModification() {
+    const lastModification = document.getElementById("lastModification");
     lastModification.innerHTML = "Last modification: " + document.lastModified
 }
 
@@ -20,9 +19,7 @@ hambutton.addEventListener('click', () => {
     hambutton.classList.toggle('show');
 });
 
-
 //subtitle
-
 
 function setSubTitle() {
     let subTitle = document.querySelector(".active-page");
@@ -43,15 +40,15 @@ function activePage() {
 }
 
 // Companies Cards 
-const url = "data/members.json";
+const urlMembers = "data/members.json";
 const cards = document.querySelector('#cards');
 
 async function getCompanyData() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(urlMembers);
         const data = await response.json();
 
-        cards.innerHTML = ''; // Limpa o conteúdo antes de adicionar novos elementos
+        cards.innerHTML = ''; 
 
         if (cards.classList.contains('grid')) {
             displayCompaniesGrid(data.companies);
@@ -120,11 +117,66 @@ function setView(view) {
     getCompanyData();
 }
 
-
 function onLoad() {
-    thisYear()
-    myFunction()
-    getCompanyData();
-    activePage()
-    setSubTitle()
+    // thisYear()
+    // lastModification()
+    // getCompanyData();
+    // activePage()
+    // setSubTitle()
+    getWeatherData()
 }
+
+
+async function getProphetData(){
+    const response = await fetch(url);
+    const data = await response.json();
+    // console.table(data.prophets);
+    displayCurrentWeather(data.prophets);
+}
+
+const urlWeather = 'https://api.openweathermap.org/data/2.5/weather?lat=-30.03&lon=-51.18&appid=550eb64eec59386942f21cc388074a12';
+
+async function getWeatherData(){
+    const data = await fetch(urlWeather);
+    const result= await data.json();
+
+    displayCurrentWeather(result); 
+
+}
+
+const currentW = document.querySelector('#current-weather');
+
+const displayCurrentWeather = (result) => {
+    let card = document.createElement('section');
+    card.classList.toggle('myWeather');
+
+
+    let weatherIcon = document.createElement('img');
+    let temperature = document.createElement('h3');
+    let defWeather = document.createElement('p');
+    let extraWeather = document.createElement('p');
+
+
+    const tempCelsius = (result.main.temp - 273.15).toFixed(2);
+    const tempMaxCelsius = (result.main.temp_max - 273.15).toFixed(2);
+    const tempMinCelsius = (result.main.temp_min - 273.15).toFixed(2);
+
+    temperature.textContent = `${tempCelsius} °C`;
+
+    defWeather.textContent = `${result.weather[0].main}`;
+
+    extraWeather.textContent = `High ${tempMaxCelsius} °C | Low: ${tempMinCelsius} | Humidity: ${result.main.humidity}% |Sunrise: ${result.sys.sunrise} | Sunset: ${result.sys.sunset}`;
+
+    weatherIcon.src = `https://openweathermap.org/img/wn/${result.weather[0].icon}.png`;
+    weatherIcon.alt = result.weather[0].description;
+
+
+    card.appendChild(weatherIcon);
+    card.appendChild(temperature);
+    card.appendChild(defWeather);
+    card.appendChild(extraWeather);
+
+
+    currentW.appendChild(card)
+}
+

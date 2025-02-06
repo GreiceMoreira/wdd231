@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Directory Page</title>
+    <meta name="description"
+        content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Chamber of Commerce Directory Page">
+    <meta name="author" content="Greice Moreira">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Facebook social media meta tags  -->
+    <meta property="og:title" content="Chamber of Commerce Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://greicemoreira.github.io/wdd231/images/rio-grando-sul-flag.jpg">
+    <meta property="og:image:width" content="200px">
+    <meta property="og:image:height" content="134px">
+    <meta property="og:url" content="https://greicemoreira.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Website build to the Porto Alegre Chamber of Commerce">
+    <!-- Java and CSS  -->
+    <script src="scripts/script_index.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="logo-name">
+            <img class="logo" src="images/logo.svg" alt="logo">
+            <h3>Porto Alegre <br>
+                Chamber of Comerce</h3>
+            <button class="cta" aria-label="Join us">Join us</button>
+        </div>
+        <button id="menu" aria-label="Menu button"></button>
+
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html">Home</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Directory</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Join</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="hero-image">
+            <h1>Welcome to Porto Alegre</h1>
+        </div>
+        <h2 id="subTitle">HOME</h2>
+        <div class="grid">
+            <div id="events">
+                <section>
+                    <h2>Events</h2>
+                    <picture>
+                        <img src="images/ceramic-event.jpg" alt="Woman making ceramic tase" loading="lazy" width="400">
+                        <figcaption>Ceramics Workshop: Mini Animal sculpture, with Casa Tori studio</figcaption>
+                        <p>In this workshop, we will start from our passion for animals to practice modeling in clay,
+                            building a mini sculpture. Participants will also learn how to apply engobes - clay-based
+                            coloring, to add color and details to the sculptures, bringing more personality and richness
+                            of detail to the work.</p>
+                    </picture>
+                </section>
+            </div>
+            <div id="current-weather"></div>
+            <div id="weather-forecast"></div>
+        </div>
+
+        <div id="viewCards">
+            <button onclick="setView('grid')" aria-label="Grid of companies">🔲 Grid </button>
+            <button onclick="setView('list')" aria-label="List of companies">📋 List</button>
+        </div>
+
+        <article class="grid" id="cards"></article>
+
+    </main>
+    <footer>
+        <div>
+            <p>Personal informations</p>
+        </div>
+        <div>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkdin</a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p id="currentyear"></p>
+            <p id="lastModification"> placeholder</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

@@ -6,7 +6,7 @@
             "phoneNumber": "55 4004-1112",
             "website": "zaffari.com.br",
             "imageurl": "images/zaffari.png",
-            "membershipLevel": 1
+            "membershipLevel": "Golden"
         },
         {
             "companyName": "STIHL",
@@ -14,7 +14,7 @@
             "phoneNumber": "51 99229-2374",
             "website": "stihl.com.br/pt",
             "imageurl": "images/stihl.png",
-            "membershipLevel": 1
+            "membershipLevel": "Golden"
         },
         {
             "companyName": "Tumelero Building Materials",
@@ -22,7 +22,7 @@
             "phoneNumber": "55 4004-2444",
             "website": "tumelero.com.br/",
             "imageurl": "images/tumelero.png",
-            "membershipLevel": 3
+            "membershipLevel": "Bronze"
         },
         {
             "companyName": "PUCRS",
@@ -30,7 +30,7 @@
             "phoneNumber": "51 3320-3500",
             "website": "portal.pucrs.br/",
             "imageurl": "images/PUCRS.png",
-            "membershipLevel": 2
+            "membershipLevel": "Silver"
         },
         {
             "companyName": "Cassol Centerlar",
@@ -38,7 +38,7 @@
             "phoneNumber": "55 4001-1515",
             "website": "cassol.com.br",
             "imageurl": "images/cassol.png",
-            "membershipLevel": 3
+            "membershipLevel": "Bronze"
         },
         {
             "companyName": "Leroy Merlin Porto Alegre",
@@ -46,7 +46,7 @@
             "phoneNumber": "55 4020-5376",
             "website": "https://www.leroymerlin.com.br/",
             "imageurl": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Leroy_Merlin.svg",
-            "membershipLevel": 2
+            "membershipLevel": "Silver"
         },
         {
             "companyName": "Barra Shopping Sul",
@@ -54,7 +54,7 @@
             "phoneNumber": "51 40034171",
             "website": "barrashoppingsul.com.br",
             "imageurl": "images/barra.png",
-            "membershipLevel": 1
+            "membershipLevel": "Golden"
         }
     ]
 }
