@@ -7,9 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <title>WDD 231 - Dynamic Web Fundamentals - Greice Moreira</title>
     <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Home">
     <meta name="author" content="Greice Moreira">
@@ -67,18 +65,25 @@
                     <button type="button" class="course-type">WDD</button>
                 </p>
                 <p class="modules-list">
-                    <button type="button" class="course-module">CSE 110</button>
-                    <button type="button" class="course-module">WDD 130</button>
-                    <button type="button" class="course-module">CSE 111</button>
-                    <button type="button" class="course-module">CSE 210</button>
-                    <button type="button" class="course-module">WDD 131</button>
-                    <button type="button" class="course-module">WDD 231</button>
+                    <button type="button" class="course-module" data-modal="cse110">CSE 110</button>
+                    <button type="button" class="course-module" data-modal="wdd130">WDD 130</button>
+                    <button type="button" class="course-module" data-modal="cse111">CSE 111</button>
+                    <button type="button" class="course-module" data-modal="cse210">CSE 210</button>
+                    <button type="button" class="course-module" data-modal="wdd131">WDD 131</button>
+                    <button type="button" class="course-module" data-modal="wdd231">WDD 231</button>
                 </p>
             </section>
         </div>
     </main>
+    
+    <dialog id="modal">
+        <h2 id="modalTitle"></h2>
+        <p id="modalContent"></p>
+        <button class="close-btn" onclick="closeModal()">X Fechar</button>
+    </dialog>
+
     <footer>
-        <p id="currentyear" onload="thisYear()"></p>
+        <p id="currentyear"></p>
         <p id="lastModification"> placeholder</p>
     </footer>
 </body>

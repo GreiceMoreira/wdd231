@@ -1,12 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&family=Poetsen+One&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 /*Global*/
 :root {
-    --background :  #f8f2e6;
-    --pale : #e9e0d1;
-    --ligth-green : #91a398;
-    --green : #33605A;
+    --background: #f8f2e6;
+    --pale: #e9e0d1;
+    --ligth-green: #91a398;
+    --green: #33605A;
     --black: #070001;
-    --brown : #68462b;
+    --brown: #68462b;
 
 }
 
@@ -23,7 +24,7 @@
 .grid {
     display: grid;
     align-items: center;
-    
+
 }
 
 
@@ -82,6 +83,7 @@ a:hover {
     font-weight: bold;
 
 }
+
 /* Header Styles */
 
 header {
@@ -89,7 +91,7 @@ header {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    
+
 }
 
 h1 {
@@ -98,9 +100,11 @@ h1 {
     padding: 5px;
     border-bottom: solid 1px var(--green);
 }
+
 h2 {
     color: var(--black);
 }
+
 header img {
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -151,6 +155,7 @@ footer {
     text-align: center;
 
 }
+
 /* Button Styles */
 
 button {
@@ -183,4 +188,42 @@ button:hover {
     flex-wrap: wrap;
     align-items: center;
     align-content: center;
+}
+
+/* Modal  */
+
+.open-btn,
+.close-btn {
+    padding: 10px;
+    border: #F9423A;
+    cursor: pointer;
+}
+
+.close-btn {
+    background: var(--green);
+    color: var(--pale);
+    margin-top: 10px;
+}
+
+
+:modal {
+    background-color: beige;
+    border-radius: 10px;
+    border: 1px solid rgb(0 0 0 / 0.1);
+}
+
+.modal {
+    padding: 1em;
+    max-width: 50ch;
+    border: 0;
+    box-shadow: 0 0 1em rgb(0 0 0 / 0.3);
+    border-radius: 8px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.modal::backdrop {
+    background: rgb(0 0 0 / 0.5);
 }

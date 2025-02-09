@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chamber of Commerce Form Page</title>
+    <meta name="description"
+        content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Chamber of Commerce Directory Page">
+    <meta name="author" content="Greice Moreira">
+    <link rel="icon" href="images/favicon.ico">
+    <!-- Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Facebook social media meta tags  -->
+    <meta property="og:title" content="Chamber of Commerce Directory Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://greicemoreira.github.io/wdd231/images/rio-grando-sul-flag.jpg">
+    <meta property="og:image:width" content="200px">
+    <meta property="og:image:height" content="134px">
+    <meta property="og:url" content="https://greicemoreira.github.io/wdd231/chamber/directory.html">
+    <meta property="og:description" content="Website build to the Porto Alegre Chamber of Commerce">
+    <!-- Java and CSS  -->
+    <script src="scripts/script_index.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+</head>
+
+<body onload="onLoad()">
+    <header>
+        <div class="logo-name">
+            <img class="logo" src="images/logo.svg" alt="logo">
+        </div>
+        <button id="menu" aria-label="Menu button"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html">Home</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Directory</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/join.html">Join</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 id="subTitle">HOME</h2>
+
+        <form action="thankyou.html" method="get">
+            <fieldset>
+                <!-- first name  -->
+                <label for="first-name">First Name: </label>
+                <input type="text" id="first-name" name="first-name" required title="Enter your first name"
+                    autocomplete="given-name" placeholder="Enter">
+
+                <!-- last name  -->
+                <label for="last-name">Last Name: </label>
+                <input type="text" id="last-name" name="last-name" required title="Enter your last name"
+                    autocomplete="family-name" placeholder="Enter">
+
+                <!-- organizational title  -->
+
+                <label for="organization-title">Organization Title: </label>
+                <input type="text" id="organization-title" name="organization-title" required
+                    title="Enter your job title (at least 7 characters, only letters, hyphens and spaces)"
+                    autocomplete="organization-title" pattern="[A-Za-z\- ]{7,}" placeholder="Your company name">
+
+                <!-- email  -->
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required title="Enter you email for contact"
+                    autocomplete="email" placeholder="example@email.com">
+
+                <!-- phone number  -->
+                <label for="phone">Phone number: </label>
+                <input type="tel" id="phone" name="phone" required title="Enter your phone number for contact"
+                    autocomplete="tel">
+
+            </fieldset>
+            <fieldset>
+                <!-- organization name  -->
+                <label for="org-name">Business/Organization Name: </label>
+                <input type="text" id="org-name" name="org-name" required title="Enter your business/organization name"
+                    autocomplete="organization" placeholder="Enter">
+
+                <!-- Membership Level Selection -->
+                <label for="membership">Membership Level: </label>
+                <select name="membership" id="membership">
+                    <option value="" disabled selected>Select</option>
+                    <option value="NP">NP Membership (Non-Profit - Free)</option>
+                    <option value="Bronze">Bronze Membership</option>
+                    <option value="Silver">Silver Membership</option>
+                    <option value="Gold">Gold Membership</option>
+                </select>
+
+                <!-- organization description  -->
+                <label for="org-description">Business/Organization description: </label>
+                <textarea name="org-description" id="org-description"
+                    title="Describe your business/organization"></textarea>
+
+                <!-- timestamp -->
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+            </fieldset>
+
+            <!-- submit button  -->
+
+            <input type="submit" value="Submit Application">
+
+
+        </form>
+
+        <div class="membership-cards">
+
+            <!-- NP  -->
+            <div class="card" id="np-modal">
+                <h3>NP Membership</h3>
+                <button onclick="document.getElementById('np-modal').showModal()">More Info</button>
+            </div>
+            <dialog id="np-modal">
+                <h2>NP Membership Benefits</h2>
+                <p>Free membership for non-profits, access to networking events.</p>
+                <button onclick="document.getElementById('np-modal').close()">Close</button>
+            </dialog>
+
+            <!-- bronze  -->
+            <div class="card" id="bronze-card">
+                <h3>Bronze Membership</h3>
+                <button onclick="document.getElementById('bronze-modal').showModal()">More Info</button>
+            </div>
+            <dialog id="bronze-modal">
+                <h2>Bronze Membership Benefits</h2>
+                <p>Discounted event fees, training access, and promotional opportunities.</p>
+                <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+            </dialog>
+
+            <!-- silver  -->
+            <div class="card" id="silver-card">
+                <h3>Silver Membership</h3>
+                <button onclick="document.getElementById('silver-modal').showModal()">More Info</button>
+            </div>
+            <dialog id="silver-modal">
+                <h2>Silver Membership Benefits</h2>
+                <p>Priority event seating, training, and advertising discounts.</p>
+                <button onclick="document.getElementById('silver-modal').close()">Close</button>
+            </dialog>
+
+            <!-- gold  -->
+            <div class="card" id="gold-card">
+                <h3>Gold Membership</h3>
+                <button onclick="document.getElementById('gold-modal').showModal()">More Info</button>
+            </div>
+            <dialog id="gold-modal">
+                <h2>Gold Membership Benefits</h2>
+                <p>Exclusive networking, free training, top-tier advertising placement.</p>
+                <button onclick="document.getElementById('gold-modal').close()">Close</button>
+            </dialog>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <p>Personal informations</p>
+        </div>
+        <div>
+            <a href="#">Youtube</a>
+            <a href="#">Twitter</a>
+            <a href="#">Linkdin</a>
+        </div>
+        <div>
+            <p>WDD231 Class Project</p>
+            <p id="currentyear"></p>
+            <p id="lastModification"> placeholder</p>
+        </div>
+
+    </footer>
+</body>
+
+</html>

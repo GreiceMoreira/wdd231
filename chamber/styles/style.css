@@ -42,7 +42,7 @@ display: block;
 h1 {
     color: var(--white);
     border-bottom: 1px solid #eee;
-    text-shadow: 0 0 15px var(--black);
+    text-shadow: 0 0 3px var(--dark-green);
     width: 60%;
     padding: 50px 0px 0px 5px;
     text-align: center;
@@ -289,4 +289,64 @@ img {
     flex-direction: initial;
     align-items: center;
     justify-content: space-between;
+}
+
+
+/* form  */
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 500px;
+    flex-wrap: wrap;
+    padding: 20px;
+    align-items: center;
+    background-color: var(--ligth-green);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px var(--green);
+    margin: 0 auto;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 0.3rem;
+    border: 1px solid var(--dark-green);
+    border-radius: 3px;
+    font-size: 1rem;
+    outline: none;
+    transition: 0.3s;
+}
+
+form label {
+    align-self: flex-start;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: var(--black);
+    padding: 3px;
+}
+
+fieldset {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--brown);
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: var(--dark-green);
+    color: var(--white);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    padding: 0.6rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--brown);
 }
