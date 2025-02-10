@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="utf-8">
@@ -22,6 +23,7 @@
     <link rel="stylesheet" href="styles/thankyou.css">
 
 </head>
+
 <body>
     <header>
         <div class="logo-name">
@@ -41,7 +43,7 @@
 
     <main>
 
-        <h2 id="subTitle">HOME</h2>
+        <h2 id="subTitle">Chamber of Commerce</h2>
         <div class="container">
             <h1>Thank You for Your Submission!</h1>
             <p>We have received your details.</p>
@@ -74,21 +76,27 @@
     </footer>
     <script>
         const thankyou = () => {
-    function getQueryParam(param) {
-        const urlParams = new URLSearchParams(window.location.search);
-        return urlParams.get(param) || "Not provided";
-    }
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param) || "Not provided";
+            }
 
-    document.getElementById("firstName").textContent = getQueryParam("first-name");
-    document.getElementById("lastName").textContent = getQueryParam("last-name");
-    document.getElementById("email").textContent = getQueryParam("email");
-    document.getElementById("mobile").textContent = getQueryParam("phone");
-    document.getElementById("business").textContent = getQueryParam("org-name");
-    document.getElementById("timestamp").textContent = getQueryParam("timestamp");
-}
-thankyou();
+            const formatTimestamp = (isoString) => {
+                if (!isoString || isoString === "Not provided") return "Not provided";
+                const date = new Date(isoString);
+                return date.toLocaleString();
+
+                document.getElementById("firstName").textContent = getQueryParam("first-name");
+                document.getElementById("lastName").textContent = getQueryParam("last-name");
+                document.getElementById("email").textContent = getQueryParam("email");
+                document.getElementById("mobile").textContent = getQueryParam("phone");
+                document.getElementById("business").textContent = getQueryParam("org-name");
+                document.getElementById("timestamp").textContent = formatTimestamp(getQueryParam("timestamp"));
+            }
+            thankyou();
 
     </script>
 
 </body>
+
 </html>

@@ -73,8 +73,8 @@
 
                 <!-- phone number  -->
                 <label for="phone">Phone number: </label>
-                <input type="tel" id="phone" name="phone" required title="Enter your phone number for contact"
-                    autocomplete="tel">
+                <input type="tel" id="phone" name="phone" required title="Enter a valid phone number with only digits (8-15 characters)"
+                    autocomplete="tel" pattern="[0-9]{8,15}">
 
             </fieldset>
             <fieldset>
@@ -173,6 +173,14 @@
         </div>
 
     </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const timestampField = document.getElementById("timestamp");
+            const now = new Date();
+            timestampField.value = now.toISOString();
+        });
+    </script>
 </body>
 
 </html>
