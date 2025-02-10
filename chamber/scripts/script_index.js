@@ -65,7 +65,7 @@ async function getCompanyData() {
 }
 
 function selectMembership(companies) {
-    const filteredMembers = companies.filter(company => 
+    const filteredMembers = companies.filter(company =>
         company.membershipLevel === "Golden" || company.membershipLevel === "Silver"
     );
     return filteredMembers;
@@ -217,7 +217,7 @@ const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}
 async function getForecastWeather() {
     const data = await fetch(urlForecast);
     const result = await data.json();
-    
+
     console.log(result);
 
     displayWeatherForecast(result);
@@ -249,12 +249,11 @@ const displayWeatherForecast = (result) => {
     forecastW.appendChild(card)
 }
 
-function onLoad() {
-    thisYear()
-    lastModification()
-    getCompanyData();
-    // activePage()
-    // setSubTitle()
-    getWeatherData() 
-    getForecastWeather()
-}
+
+thisYear();
+lastModification();
+getCompanyData();
+activePage();
+setSubTitle();
+getWeatherData();
+getForecastWeather();
