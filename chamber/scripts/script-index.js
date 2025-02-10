@@ -242,6 +242,34 @@ const displayWeatherForecast = (result) => {
     forecastW.appendChild(card)
 }
 
+const membershipData = {
+    np: {
+        title: "NP Membership",
+        description: "Free membership for non-profits, access to networking events."
+    },
+    bronze: {
+        title: "Bronze Membership",
+        description: "Discounted event fees, training access, and promotional opportunities."
+    },
+    silver: {
+        title: "Silver Membership",
+        description: "Priority event seating, training, and advertising discounts."
+    },
+    gold: {
+        title: "Gold Membership",
+        description: "Exclusive networking, free training, top-tier advertising placement."
+    }
+};
+
+function showMembershipInfo(membershipId) {
+    const membership = membershipData[membershipId];
+    if (membership) {
+        document.getElementById("membershipDescription").textContent = membership.description;
+        document.getElementById("membershipModal").showModal();
+    }
+}
+
+
 
 thisYear();
 lastModification();

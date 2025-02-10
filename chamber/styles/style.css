@@ -5,7 +5,7 @@
     --ligth-green: #91a398;
     --green: #33605A;
     --black: #070001;
-    --brown: #68462b;
+    --brown: rgb(104, 70, 43);
     --dark-green: #005151;
     --red: #F9423A;
     --yellow: #FFB81C;
@@ -297,7 +297,7 @@ img {
 form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 90%;
     max-width: 500px;
     flex-wrap: wrap;
     padding: 20px;
@@ -350,3 +350,65 @@ form input[type="submit"] {
 form input[type="submit"]:hover {
     background-color: var(--brown);
 }
+
+.membership-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.membership-cards .card {
+    background-color: var(--pale);
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 10px var(--brown);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+
+}
+
+.membership-cards .card:hover {
+    transform: translateY(-10px); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card button {
+    background-color: var(--brown);
+    color: var(--background);
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: var(--ligth-green);
+} 
+
+dialog {
+    padding: 20px;
+    max-width: 400px;
+    margin: 10% auto;
+    border-radius: 8px;
+}
+
+dialog button {
+    background-color: var(--brown);
+    color: var(--pale);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+dialog button:hover {
+    background-color: var(--ligth-green);
+}
+

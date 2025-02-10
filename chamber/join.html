@@ -73,8 +73,9 @@
 
                 <!-- phone number  -->
                 <label for="phone">Phone number: </label>
-                <input type="tel" id="phone" name="phone" required title="Enter a valid phone number with only digits (8-15 characters)"
-                    autocomplete="tel" pattern="[0-9]{8,15}">
+                <input type="tel" id="phone" name="phone" required
+                    title="Enter a valid phone number with only digits (8-15 characters)" autocomplete="tel"
+                    pattern="[0-9]{8,15}">
 
             </fieldset>
             <fieldset>
@@ -108,53 +109,34 @@
 
 
         </form>
-
         <div class="membership-cards">
-
-            <!-- NP  -->
-            <div class="card" id="np-modal">
+            <div class="card" id="np" onclick="showMembershipInfo('np')">
                 <h3>NP Membership</h3>
-                <button onclick="document.getElementById('np-modal').showModal()">More Info</button>
+                <p>Free membership for non-profits</p>
+                <button>More Info</button>
             </div>
-            <dialog id="np-modal">
-                <h2>NP Membership Benefits</h2>
-                <p>Free membership for non-profits, access to networking events.</p>
-                <button onclick="document.getElementById('np-modal').close()">Close</button>
-            </dialog>
-
-            <!-- bronze  -->
-            <div class="card" id="bronze-card">
+            <div class="card" id="bronze" onclick="showMembershipInfo('bronze')">
                 <h3>Bronze Membership</h3>
-                <button onclick="document.getElementById('bronze-modal').showModal()">More Info</button>
+                <p>Discounted event fees and more</p>
+                <button>More Info</button>
             </div>
-            <dialog id="bronze-modal">
-                <h2>Bronze Membership Benefits</h2>
-                <p>Discounted event fees, training access, and promotional opportunities.</p>
-                <button onclick="document.getElementById('bronze-modal').close()">Close</button>
-            </dialog>
-
-            <!-- silver  -->
-            <div class="card" id="silver-card">
+            <div class="card" id="silver" onclick="showMembershipInfo('silver')">
                 <h3>Silver Membership</h3>
-                <button onclick="document.getElementById('silver-modal').showModal()">More Info</button>
+                <p>Priority event seating and more</p>
+                <button>More Info</button>
             </div>
-            <dialog id="silver-modal">
-                <h2>Silver Membership Benefits</h2>
-                <p>Priority event seating, training, and advertising discounts.</p>
-                <button onclick="document.getElementById('silver-modal').close()">Close</button>
-            </dialog>
-
-            <!-- gold  -->
-            <div class="card" id="gold-card">
+            <div class="card" id="gold" onclick="showMembershipInfo('gold')">
                 <h3>Gold Membership</h3>
-                <button onclick="document.getElementById('gold-modal').showModal()">More Info</button>
+                <p>Exclusive benefits and more</p>
+                <button>More Info</button>
             </div>
-            <dialog id="gold-modal">
-                <h2>Gold Membership Benefits</h2>
-                <p>Exclusive networking, free training, top-tier advertising placement.</p>
-                <button onclick="document.getElementById('gold-modal').close()">Close</button>
-            </dialog>
         </div>
+        
+        <dialog id="membershipModal">
+            <h2>Membership Benefits</h2>
+            <p id="membershipDescription"></p>
+            <button onclick="document.getElementById('membershipModal').close()">Close</button>
+        </dialog>
 
     </main>
     <footer>
