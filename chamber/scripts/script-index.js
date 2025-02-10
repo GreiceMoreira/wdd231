@@ -4,10 +4,13 @@ function thisYear() {
     const d = new Date();
     document.getElementById("currentyear").textContentL = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
 }
+
+thisYear();
 function lastModification() {
     const lastModification = document.getElementById("lastModification");
     lastModification.innerHTML = "Last modification: " + document.lastModified
 }
+lastModification();
 
 // Hamburguer menu 
 
@@ -28,6 +31,7 @@ function setSubTitle() {
     document.querySelector("#subTitle").innerHTML = subTitle.outerText
 
 }
+setSubTitle();
 
 function activePage() {
     const links = document.querySelectorAll("nav ul li a");
@@ -38,6 +42,7 @@ function activePage() {
         }
     });
 }
+activePage();
 
 // Companies Cards 
 const urlMembers = "data/members.json";
@@ -63,6 +68,7 @@ async function getCompanyData() {
         console.error("ERROR", error);
     }
 }
+getCompanyData(); 
 
 function selectMembership(companies) {
     const filteredMembers = companies.filter(company =>
@@ -165,6 +171,7 @@ async function getWeatherData() {
 
     displayCurrentWeather(result);
 }
+getWeatherData();
 
 const currentW = document.querySelector('#current-weather');
 const displayCurrentWeather = (result) => {
@@ -211,6 +218,7 @@ const displayCurrentWeather = (result) => {
     currentW.appendChild(card)
 }
 
+
 // Forecast Weather 
 const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
@@ -222,7 +230,7 @@ async function getForecastWeather() {
 
     displayWeatherForecast(result);
 }
-
+getForecastWeather();
 const forecastW = document.querySelector('#weather-forecast')
 const displayWeatherForecast = (result) => {
     let card = document.createElement('section');
@@ -248,12 +256,3 @@ const displayWeatherForecast = (result) => {
 
     forecastW.appendChild(card)
 }
-
-
-thisYear();
-lastModification();
-getCompanyData();
-activePage();
-setSubTitle();
-getWeatherData();
-getForecastWeather();
