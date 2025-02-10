@@ -2,7 +2,7 @@
 
 function thisYear() {
     const d = new Date();
-    document.getElementById("currentyear").textContent = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
+    document.getElementById("currentyear").innerHTML = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
 }
 function lastModification() {
     const lastModified = new Date(document.lastModified);
