@@ -2,15 +2,12 @@
 
 function thisYear() {
     const d = new Date();
-    document.getElementById("currentyear").textContentL = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
+    document.getElementById("currentyear").textContent = "&copy;" + d.getFullYear() + " | 👩🏼‍💻 Greice Moreira | Rio Grande do Sul, Brazil"
 }
-
-thisYear();
 function lastModification() {
-    const lastModification = document.getElementById("lastModification");
-    lastModification.innerHTML = "Last modification: " + document.lastModified
+    const lastModified = new Date(document.lastModified);
+    document.getElementById("lastModification").textContent = `Last modification: ${lastModified.toLocaleString()}`;
 }
-lastModification();
 
 // Hamburguer menu 
 
@@ -26,12 +23,10 @@ hambutton.addEventListener('click', () => {
 
 function setSubTitle() {
     let subTitle = document.querySelector(".active-page");
-    console.log(subTitle.outerText)
-
-    document.querySelector("#subTitle").innerHTML = subTitle.outerText
-
+    if (subTitle) {
+        document.querySelector("#subTitle").innerHTML = subTitle.outerText;
+    }
 }
-setSubTitle();
 
 function activePage() {
     const links = document.querySelectorAll("nav ul li a");
@@ -42,7 +37,6 @@ function activePage() {
         }
     });
 }
-activePage();
 
 // Companies Cards 
 const urlMembers = "data/members.json";
@@ -68,7 +62,6 @@ async function getCompanyData() {
         console.error("ERROR", error);
     }
 }
-getCompanyData(); 
 
 function selectMembership(companies) {
     const filteredMembers = companies.filter(company =>
@@ -151,12 +144,6 @@ function setView(view) {
     getCompanyData();
 }
 
-async function getProphetData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    // console.table(data.prophets);
-    displayCurrentWeather(data.prophets);
-}
 
 // City lat and lon 
 const apiKey = "550eb64eec59386942f21cc388074a12";
@@ -171,7 +158,6 @@ async function getWeatherData() {
 
     displayCurrentWeather(result);
 }
-getWeatherData();
 
 const currentW = document.querySelector('#current-weather');
 const displayCurrentWeather = (result) => {
@@ -218,7 +204,6 @@ const displayCurrentWeather = (result) => {
     currentW.appendChild(card)
 }
 
-
 // Forecast Weather 
 const urlForecast = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
 
@@ -230,7 +215,7 @@ async function getForecastWeather() {
 
     displayWeatherForecast(result);
 }
-getForecastWeather();
+
 const forecastW = document.querySelector('#weather-forecast')
 const displayWeatherForecast = (result) => {
     let card = document.createElement('section');
@@ -257,17 +242,12 @@ const displayWeatherForecast = (result) => {
     forecastW.appendChild(card)
 }
 
-// Function to get URL parameters
-function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param) || "Not provided";
-}
 
-// Populate fields with form data
-document.getElementById("firstName").textContent = getQueryParam("first-name");
-document.getElementById("lastName").textContent = getQueryParam("last-name");
-document.getElementById("email").textContent = getQueryParam("email");
-document.getElementById("mobile").textContent = getQueryParam("phone");
-document.getElementById("business").textContent = getQueryParam("org-name");
-document.getElementById("timestamp").textContent = getQueryParam("timestamp");
+thisYear();
+lastModification();
+getCompanyData();
+activePage();
+setSubTitle();
+getWeatherData();
+getForecastWeather();
 
