@@ -75,27 +75,25 @@
         </div>
     </footer>
     <script>
-        const thankyou = () => {
-            function getQueryParam(param) {
-                const urlParams = new URLSearchParams(window.location.search);
-                return urlParams.get(param) || "Not provided";
-            }
-
-            const formatTimestamp = (isoString) => {
-                if (!isoString || isoString === "Not provided") return "Not provided";
-                const date = new Date(isoString);
-                return date.toLocaleString();
-
-                document.getElementById("firstName").textContent = getQueryParam("first-name");
-                document.getElementById("lastName").textContent = getQueryParam("last-name");
-                document.getElementById("email").textContent = getQueryParam("email");
-                document.getElementById("mobile").textContent = getQueryParam("phone");
-                document.getElementById("business").textContent = getQueryParam("org-name");
-                document.getElementById("timestamp").textContent = formatTimestamp(getQueryParam("timestamp"));
-            }
-
+        function getQueryParam(param) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(param) || "Not provided";
         }
-        thankyou();
+
+        function formatTimestamp(isoString) {
+            if (!isoString || isoString === "Not provided") return "Not provided";
+            const date = new Date(isoString);
+            return date.toLocaleString();
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("firstName").textContent = getQueryParam("first-name");
+            document.getElementById("lastName").textContent = getQueryParam("last-name");
+            document.getElementById("email").textContent = getQueryParam("email");
+            document.getElementById("mobile").textContent = getQueryParam("phone");
+            document.getElementById("business").textContent = getQueryParam("org-name");
+            document.getElementById("timestamp").textContent = formatTimestamp(getQueryParam("timestamp"));
+        });
 
     </script>
 
