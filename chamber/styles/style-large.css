@@ -24,4 +24,8 @@
 	.membership-cards {
 		flex-direction: row;
 	}
+
+	.container {
+		width: 70%;
+	}
 }
