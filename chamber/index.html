@@ -5,13 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chamber of Commerce Directory Page</title>
-    <meta name="description" content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Chamber of Commerce Directory Page">
+    <meta name="description"
+        content="WDD 231 - Dynamic Web Fundamentals - Greice Moreira's BYU-Idaho - Chamber of Commerce Directory Page">
     <meta name="author" content="Greice Moreira">
     <link rel="icon" href="images/favicon.ico">
     <!-- Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <!-- Facebook social media meta tags  -->
     <meta property="og:title" content="Chamber of Commerce Directory Page">
     <meta property="og:type" content="website">
@@ -28,6 +30,14 @@
 </head>
 
 <body>
+    <div class="overlay" id="overlay">
+        <div id="sidebar" class="sidebar">
+            <button class="side-close-btn" onclick="closeSidebar()">X</button>
+            <p id="visit-message"></p>
+        </div>
+    </div>
+
+
     <header>
         <div class="logo-name">
             <img class="logo" src="images/logo.svg" alt="logo">
@@ -39,7 +49,7 @@
                 <li><a href="https://greicemoreira.github.io/wdd231/chamber/">Home</a></li>
                 <li><a href="https://greicemoreira.github.io/wdd231/chamber/directory.html">Directory</a></li>
                 <li><a href="https://greicemoreira.github.io/wdd231/chamber/join.html">Join</a></li>
-                <li><a href="https://greicemoreira.github.io/wdd231/chamber/discovery.html">Discover</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd231/chamber/discover.html">Discover</a></li>
             </ul>
         </nav>
     </header>
@@ -93,6 +103,9 @@
         </div>
 
     </footer>
+
+
+
 </body>
 
 </html>
