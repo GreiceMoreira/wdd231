@@ -1,27 +1,3 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const visitMessage = document.querySelector("#visit-message");
-    const overlay = document.getElementById("overlay");
-    const lastVisit = localStorage.getItem("lastVisit");
-    const currentTime = new Date().getTime();
-
-    if (!lastVisit) {
-        visitMessage.textContent = "Welcome! Let us know if you have any questions.";
-    } else {
-        const lastVisitTime = parseInt(lastVisit, 10)
-        const timeDiff = currentTime - lastVisitTime;
-        const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
-
-        if (daysDiff < 1) {
-            visitMessage.textContent = "Back so soon! Awesome!";
-        } else {
-            visitMessage.textContent = `You last visited ${daysDiff} day${daysDiff > 1 ? "s" : ""} ago.`;
-        }
-    }
-    localStorage.setItem("lastVisit", currentTime);
-})
-function closeSidebar() {
-    document.getElementById("overlay").style.display = "none";
-}
 
 
 // Last modification and current Year 
