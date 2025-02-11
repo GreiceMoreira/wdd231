@@ -489,6 +489,12 @@ dialog button:hover,
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
+.discover-card img {
+    width: 300px;
+    height: 200px;
+
+}
+
 
 .sidebar {
     background: #fff;
@@ -533,3 +539,4 @@ dialog button:hover,
         transform: scale(1);
     }
 }
+
