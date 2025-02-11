@@ -420,6 +420,8 @@ dialog button ,
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    float: inline-end;
+    margin-top: 1rem;
 }
 
 dialog button:hover,
