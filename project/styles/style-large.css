@@ -1,0 +1,101 @@
+@media only screen and (min-width: 40em) {
+
+	.hero-image {
+		background-image: url(../images/hero.webp);
+	}
+
+	.gallery-grid {
+		margin: 3rem;
+		gap: 9px;
+	}
+
+	.filter fieldset {
+		margin: 3px 3px;
+	}
+
+	.filter h3 {
+		margin: 15px 50px;
+	}
+	
+
+	.navigation {
+		display: flex;
+	}
+
+	.navigation li {
+		display: block;
+		flex: 1 1 100%;
+	}
+
+	.navigation a {
+		text-align: center;
+	}
+
+	#menu {
+		display: none;
+	}
+
+	.grid {
+		margin-left: 2rem;
+		margin-right: 2rem;
+	}
+
+	.grid-area.one {
+		grid-template-areas:
+			"head head head"
+			"picture p p"
+			"picture p p";
+		text-align: start;
+	}
+
+	.grid-area.two {
+		grid-template-areas:
+			"head head head"
+			"p p picture"
+			"p p picture";
+		text-align: end;
+	}
+
+	.form-grid-area {
+		display: grid;
+		grid-template-areas:
+			"title title title"
+			"picture form form"
+			"picture form form"
+			"member member member";
+		gap: 10px;
+		margin: 10px 20px;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	.gsc input[type=submit],
+	.gsc input[type=text],
+	.gsc input[type=tel],
+	.gsc input[type=email],
+	.gsc select {
+		max-width: 400px;
+	}
+
+	.form-grid-area picture {
+		grid-area: picture;
+		width: 100%;
+		height: auto;
+	}
+
+	.form-grid-area h1 {
+		grid-area: title;
+	}
+
+	.form-grid-area .gsc {
+		grid-area: form;
+	}
+
+	.membership-cards {
+		flex-direction: row;
+	}
+
+	footer {
+		flex-direction: row;
+	}
+}

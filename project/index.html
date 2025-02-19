@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<!-- Last modification 08.05.2024 -->
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Yarn.svg"> <!-- 17x17 pixels -->
+    <title>Granny Square</title>
+    <meta name="description" content="Homepage of Granny Square Club">
+    <meta name="author" content="Greice Moreira">
+
+        
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rouge+Script&display=swap" rel="stylesheet">
+
+
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+    
+</head>
+
+<body>
+
+    <div class="overlay" id="overlay">
+        <div id="sidebar" class="sidebar">
+            <button class="side-close-btn" onclick="closeSidebar()">X</button>
+            <p id="visit-message"></p>
+        </div>
+    </div>
+    <header>
+        <div class="container">
+            <img src="./images/logo.webp" alt="Kelly Franceschetti">
+        </div>
+        <button id="menu" aria-label="Menu button"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://greicemoreira.github.io/wdd131/project/">Home</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/gallery.html">Gallery</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/form.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="hero-image">
+            <h1>Granny Square Club</h1>
+            <p id="phero">Join our online crochet community and master the art of granny squares with Kelly Franceschetti!</p>
+            <button class="cta" aria-label="Join us" onclick="window.location.href='https://greicemoreira.github.io/wdd131/project/form.html'">Join us</button>
+        </div>
+
+        <div class="grid">
+            <section class="grid-area one">
+                <h2>About the Group</h2>
+                <picture>
+                    <img src="images/granny_colors.webp" alt="Colorful granny squares"  loading="lazy">
+                </picture>
+                <p>
+                    The <strong>Granny Square Club</strong>  is a warm and welcoming online space where crochet lovers of all levels come together to learn, share, and create. Whether you're just picking up a crochet hook for the first time or you're looking to refine your skills, this community is for you!
+                </p>
+            </section>
+            <section class="grid-area two">
+                <h2>Learn with Kelly Franceschetti</h2>                
+                <p>
+                    Led by experienced crochet instructor <strong>Kelly Franceschetti</strong>, our lessons cover everything from beginner stitches to advanced techniques.Through interactive tutorials, live workshops, and an encouraging group environment, you'll gain confidence in your crochet skills, and create stunning granny squares along the way.
+                </p>
+                <picture>
+                    <img src="images/kf.webp" alt="Kelly Franceschetti teacher" loading="lazy">
+                </picture>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div>
+            <p>&copy; Kelly Franceschetti.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profekellyfranceschetti" target="_blank">
+                <img src="images/icons-facebook.svg" alt="Facebook" width="32">
+            </a>
+            <a href="https://www.instagram.com/kellyfranceschetti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+                <img src="images/icons-instagram.svg" alt="Instagram" width="32">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/icons-whatsapp.svg" alt="WhatsApp" width="32">
+            </a>
+        </div>
+        <div>
+            <p id="currentyear"></p>
+            <p id="lastModification"></p>
+        </div>
+
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const visitMessage = document.querySelector("#visit-message");
+            const overlay = document.getElementById("overlay");
+            const lastVisit = localStorage.getItem("lastVisit");
+            const currentTime = new Date().getTime();
+
+            if (!lastVisit) {
+                visitMessage.textContent = "Welcome! Feel free to reach out if you have any questions.";
+            } else {
+                const lastVisitTime = parseInt(lastVisit, 10)
+                const timeDiff = currentTime - lastVisitTime;
+                const daysDiff = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
+
+                if (daysDiff < 1) {
+                    visitMessage.textContent = "Back so soon! That's awesome!";
+                } else {
+                    visitMessage.textContent = `You last visited ${daysDiff} day${daysDiff > 1 ? "s" : ""} ago.`;
+                }
+            }
+            localStorage.setItem("lastVisit", currentTime);
+        })
+        function closeSidebar() {
+            document.getElementById("overlay").style.display = "none";
+        }
+
+    </script>
+</body>
+
+
+</html>

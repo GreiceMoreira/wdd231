@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- Last modification 08.05.2024 -->
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Yarn.svg"> <!-- 17x17 pixels -->
+    <title>Join the Granny Square Club</title>
+    <meta name="description" content="Join the Granny Square Club">
+    <meta name="author" content="Greice Moreira">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+
+
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <img src="./images/logo.webp" alt="Kelly Franceschetti">
+        </div>
+        <button id="menu" aria-label="Menu button"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://greicemoreira.github.io/wdd131/project/">Home</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/gallery.html">Gallery</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/form.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="form-grid-area">
+        <h1 id="join-title">Be a part of the club</h1>
+        <picture>
+            <img src="images/granny_navy.webp" alt="">
+        </picture>
+        <form action="thankyou.html" method="get" class="gsc">
+            <fieldset>
+                <!-- first name  -->
+                <label for="first-name">First Name: </label>
+                <input type="text" id="first-name" name="first-name" required title="Enter your first name"
+                    autocomplete="given-name" placeholder="Enter">
+
+                <!-- last name  -->
+                <label for="last-name">Last Name: </label>
+                <input type="text" id="last-name" name="last-name" required title="Enter your last name"
+                    autocomplete="family-name" placeholder="Enter">
+
+                <!-- email  -->
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" required title="Enter your email for contact."
+                    autocomplete="email" placeholder="example@email.com">
+
+                <!-- phone number  -->
+                <label for="phone">Phone number: </label>
+                <input type="tel" id="phone" name="phone"
+                    title="Enter a valid phone number (8-15 digits only)" autocomplete="tel"
+                    pattern="[0-9]{8,15}">
+
+            </fieldset>
+            <fieldset>
+
+                <!-- Membership Level Selection -->
+                <label for="membership">Crochet Skill Level</label>
+                <select name="membership" id="membership">
+                    <option value="" disabled selected>Select</option>
+                    <option value="child">Child</option>
+                    <option value="adult">Adult</option>
+                    <option value="granny">Granny</option>
+                </select>
+
+                <!-- timestamp -->
+
+                <input type="hidden" id="timestamp" name="timestamp" value="">
+            </fieldset>
+
+
+            <!-- submit button  -->
+
+            <input type="submit" value="Submit Application">
+
+        </form>
+
+
+        <div class="membership-cards">
+            <div class="card" id="child" onclick="showMembershipInfo('child')">
+                <h3>Child Level</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card" id="adult" onclick="showMembershipInfo('adult')">
+                <h3>Adult Level</h3>
+                <button>Learn More</button>
+            </div>
+            <div class="card" id="granny" onclick="showMembershipInfo('granny')">
+                <h3>Granny Level</h3>
+                <button>Learn More</button>
+            </div>
+        </div>
+
+        <dialog id="membershipModal">
+            <h2 id="membershipTitle"></h2>
+            <p id="membershipDescription"></p>
+            <button onclick="document.getElementById('membershipModal').close()">Close</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; Kelly Franceschetti.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profekellyfranceschetti" target="_blank">
+                <img src="images/icons-facebook.svg" alt="Facebook" width="32">
+            </a>
+            <a href="https://www.instagram.com/kellyfranceschetti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank">
+                <img src="images/icons-instagram.svg" alt="Instagram" width="32">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/icons-whatsapp.svg" alt="WhatsApp" width="32">
+            </a>
+        </div>
+        <div>
+            <p id="currentyear"></p>
+            <p id="lastModification"></p>
+        </div>
+
+    </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const timestampField = document.getElementById("timestamp");
+            const now = new Date();
+            timestampField.value = now.toISOString();
+        });
+    </script>
+</body>
+
+</html>

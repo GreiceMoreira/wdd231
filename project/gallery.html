@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- Last modification 08.05.2024 -->
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/Yarn.svg"> <!-- 17x17 pixels -->
+    <title>Granny Square Gallery</title>
+    <meta name="description" content="Granny Square Gallery">
+    <meta name="author" content="Greice Moreira">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Rouge+Script&display=swap"
+        rel="stylesheet">
+
+
+    <script src="scripts/script.js" defer></script>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/style-large.css">
+
+
+</head>
+
+<body class="main-grid">
+    <header>
+        <div class="container">
+            <img src="./images/logo.webp" alt="Kelly Franceschetti">
+        </div>
+        <button id="menu" aria-label="Menu button"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="https://greicemoreira.github.io/wdd131/project/">Home</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/gallery.html">Gallery</a></li>
+                <li><a href="https://greicemoreira.github.io/wdd131/project/form.html">Inscription</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="filter">
+            <h3>Filter by Skill Level</h3>
+            <fieldset>
+                <legend>Choose a level:</legend>
+                <div class="filter-navigation">
+                    <button id="All" aria-label="Show all crochet squares" aria-controls="cards">All</button>
+                    <button id="child" aria-label="Show child-level crochet squares" aria-controls="cards">Child</button>
+                    <button id="adult" aria-label="Show adult-level crochet squares" aria-controls="cards">Adult</button>
+                    <button id="granny" aria-label="Show granny-level crochet squares" aria-controls="cards">Granny</button>
+                </div>
+            </fieldset>
+        </section>
+        <div class="gallery-grid" id="cards"></div>
+    </main>
+
+    <footer>
+        <div>
+            <p>&copy; Kelly Franceschetti.</p>
+        </div>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/profekellyfranceschetti" target="_blank">
+                <img src="images/icons-facebook.svg" alt="Facebook" width="32">
+            </a>
+            <a href="https://www.instagram.com/kellyfranceschetti?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                target="_blank">
+                <img src="images/icons-instagram.svg" alt="Instagram" width="32">
+            </a>
+            <a href="#" target="_blank">
+                <img src="images/icons-whatsapp.svg" alt="WhatsApp" width="32">
+            </a>
+        </div>
+        <div>
+            <p id="currentyear"></p>
+            <p id="lastModification"></p>
+        </div>
+
+    </footer>
+</body>
+
+</html>
