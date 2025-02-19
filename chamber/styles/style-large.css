@@ -28,7 +28,7 @@
 	.container {
 		width: 70%;
 	}
-	.discover-container {
+	#places-cards {
 			grid-template-columns: repeat(4, 1fr);
 			grid-template-areas: 
 				"item1 item2 item3 item4"

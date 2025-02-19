@@ -281,7 +281,7 @@ activePage();
 setSubTitle();
 getWeatherData();
 getForecastWeather();
-getPlacesData();
+
 
 
 
@@ -296,7 +296,7 @@ async function getPlacesData() {
         const data = await response.json();
 
         placesCards.innerHTML = '';
-        displayPlaces(data);
+        displayPlaces(data.places);
 
     } catch (error) {
         console.error("ERROR", error);
@@ -307,7 +307,7 @@ function displayPlaces(place) {
     place.forEach(places => {
         let card = document.createElement('section');
         card.classList.toggle('place');
-        card.id = places.id;
+        card.id = `place-${places.id}`;
         let placesName = document.createElement('h2');
         let image = document.createElement('img');
         let addresse = document.createElement('h4');
@@ -318,7 +318,7 @@ function displayPlaces(place) {
         addresse.textContent = `${places.addresse}`;
         description.textContent = `${places.description}`;
 
-        image.setAttribute('src', places.imageurl);
+        image.setAttribute('src', places.imageUrl);
         image.setAttribute('alt', `image of ${places.placeName}`);
         image.setAttribute('loading', 'lazy');
 
@@ -326,8 +326,11 @@ function displayPlaces(place) {
         card.appendChild(image)
         card.appendChild(addresse)
         card.appendChild(description)
+        card.appendChild(button)
 
 
-        cards.appendChild(card)
+        placesCards.appendChild(card);
     });
 }
+
+getPlacesData();

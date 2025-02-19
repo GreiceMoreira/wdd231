@@ -4,14 +4,14 @@
             "id": 1,
             "placeName": "Beira-Rio Stadium",
             "addresse": "Av. Padre Cacique, 891 - Praia de Belas, Porto Alegre",
-            "imageurl": "images/beira-rio.webp",
+            "imageUrl": "images/beira-rio.webp",
             "description": "Home of Sport Club Internacional, this iconic stadium hosted matches during the 2014 FIFA World Cup and offers guided tours for football fans."
         },
         {
             "id": 2,
             "placeName": "Redenção Park (Farroupilha Park)",
             "addresse": "Av. João Pessoa, s/n - Farroupilha",
-            "imageurl": "images/farroupilha.webp",
+            "imageUrl": "images/farroupilha.webp",
             "description": "A popular green space in the city, perfect for walks, picnics, and cultural events, with a famous Sunday flea market."
         },
 
@@ -19,7 +19,7 @@
             "id": 3,
             "placeName": "Gasometer Power Plant",
             "addresse": "Av. Pres. João Goulart, 551 - Centro Histórico",
-            "imageurl": "images/gasometro.webp",
+            "imageUrl": "images/gasometro.webp",
             "description": "An old power plant transformed into a cultural space, offering exhibitions and one of the best sunset views by the Guaíba River."
         },
 
@@ -27,7 +27,7 @@
             "id": 4,
             "placeName": "Mario Quintana House of Culture",
             "addresse": "R. dos Andradas, 736 - Centro Histórico",
-            "imageurl": "images/mario-quintana.webp",
+            "imageUrl": "images/mario-quintana.webp",
             "description": "A vibrant cultural center housed in a historic hotel, featuring art exhibitions, theaters, and tributes to the poet Mário Quintana."
         },
 
@@ -35,7 +35,7 @@
             "id": 5,
             "placeName": "Iberê Camargo Foundation",
             "addresse": "Av. Padre Cacique, 2000",
-            "imageurl": "images/ibere-camargo.webp",
+            "imageUrl": "images/ibere-camargo.webp",
             "description": "An architectural landmark by Álvaro Siza, this museum showcases the works of Iberê Camargo and contemporary art exhibitions."
         },
 
@@ -43,21 +43,21 @@
             "id": 6,
             "placeName": "Moinhos de Vento Park (Windmills Park)",
             "addresse": "R. Comendador Caminha, s/n - Moinhos de Vento",
-            "imageurl": "images/windmills.webp",
+            "imageUrl": "images/windmills.webp",
             "description": "A charming park in one of Porto Alegre’s most upscale neighborhoods, featuring jogging paths, a pond, and a replica of an Azorean windmill."
         },
         {
             "id": 7,
             "placeName": "São Pedro Theater",
             "addresse": "Praça Marechal Deodoro, s/n - Centro Histórico",
-            "imageurl": "images/sao-pedro.webp",
+            "imageUrl": "images/sao-pedro.webp",
             "description": "A beautifully restored 19th-century theater, hosting plays, concerts, and cultural performances in an elegant setting."
         },
         {
             "id": 8,
             "placeName": "Botanical Garden",
             "addresse": "R. Dr. Salvador França, 1427 - Jardim Botânico",
-            "imageurl": "images/botanical.webp",
+            "imageUrl": "images/botanical.webp",
             "description": "One of the most important botanical gardens in Brazil, preserving native plant species and offering a peaceful retreat in the city."
         }
     ]

@@ -460,32 +460,33 @@ dialog button:hover,
     padding: 2px;
 }
 
-.discover-card-item1 {
+#place-1 {
     grid-area: item1;
 }
-.discover-card-item2 {
+#place-2 {
     grid-area: item2;
 }
-.discover-card-item3 {
+#place-3 {
     grid-area: item3;
 }
-.discover-card-item4 {
+#place-4 {
     grid-area: item4;
 }
-.discover-card-item5 {
+#place-5 {
     grid-area: item5;
 }
-.discover-card-item6 {
+#place-6 {
     grid-area: item6;
 }
-.discover-card-item7 {
+#place-7 {
     grid-area: item7;
 }
-.discover-card-item8 {
+#place-8 {
     grid-area: item8;
 }
 
-.discover-container {
+
+#places-cards {
     display: grid;
     gap: 20px;
     grid-template-areas: 
@@ -508,13 +509,23 @@ dialog button:hover,
     text-align: center;
 }
 
+#places-cards {
+    background: var(--pale);
+    padding: 15px;
+    border-radius: 8px;
+}
 
-.discover-card:hover {
+.place {
+    box-shadow: 0 2px 10px var(--brown);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place:hover {
     transform: translateY(-10px); 
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.discover-card img {
+#places-cards img {
     width: 300px;
     height: 200px;
 
