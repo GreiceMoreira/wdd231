@@ -14,11 +14,19 @@ const url = "data/receips.json";
 const cards = document.querySelector('#cards');
 
 async function getReceipsData() {
-    const response = await fetch(url);
-    const data = await response.json();
-    console.table(data.crochets);
-    displayCrochets(data.crochets);
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        const data = await response.json();
+        console.table(data.crochets);
+        displayCrochets(data.crochets);
+    } catch (error) {
+        console.error("Error fetching or parsing data:", error);
+    }
 }
+
 
 const displayCrochets = (crochets) => {
     cards.innerHTML = "";
