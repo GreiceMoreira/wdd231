@@ -281,4 +281,53 @@ activePage();
 setSubTitle();
 getWeatherData();
 getForecastWeather();
+getPlacesData();
 
+
+
+
+// Companies Cards 
+const urlPlaces = "data/discover.json";
+const placesCards = document.querySelector('#places-cards');
+
+async function getPlacesData() {
+    try {
+        const response = await fetch(urlPlaces);
+        const data = await response.json();
+
+        placesCards.innerHTML = '';
+        displayPlaces(data);
+
+    } catch (error) {
+        console.error("ERROR", error);
+    }
+}
+
+function displayPlaces(place) {
+    place.forEach(places => {
+        let card = document.createElement('section');
+        card.classList.toggle('place');
+        card.id = places.id;
+        let placesName = document.createElement('h2');
+        let image = document.createElement('img');
+        let addresse = document.createElement('h4');
+        let description = document.createElement('p');
+        let button = document.createElement('button');
+
+        placesName.textContent = `${places.placeName}`;
+        addresse.textContent = `${places.addresse}`;
+        description.textContent = `${places.description}`;
+
+        image.setAttribute('src', places.imageurl);
+        image.setAttribute('alt', `image of ${places.placeName}`);
+        image.setAttribute('loading', 'lazy');
+
+        card.appendChild(placesName)
+        card.appendChild(image)
+        card.appendChild(addresse)
+        card.appendChild(description)
+
+
+        cards.appendChild(card)
+    });
+}
